@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bli medlem</title>
+  </head>
+  <body>
+    <div class="top">
+      <h1 class="memberH1">Bli medlem här</h1>
+      <div class="formContainer">
+        <form action="https://httpbin.org/anything" method="post">
+          <div class="firstName memberCon">
+            <label for="firstName">Förnamn:</label>
+            <input id="firstName" type="text" name="firstname" required />
+          </div>
+          <div class="lastName memberCon">
+            <label for="lastName">Efternamn:</label>
+            <input id="lastName" name="lastname" type="text" required />
+          </div>
+          <div class="userName memberCon">
+            <label for="userName">Användarnamn:</label>
+            <input id="userName" name="username" type="text" />
+          </div>
+          <div class="password memberCon">
+            <label for="password">Lösenord:</label>
+            <input id="password" name="password" type="password" required />
+          </div>
+          <div class="email memberCon">
+            <label for="email">Epost:</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="cat memberCon">
+            <label for="catSelect">Välj en favorit katt</label>
+            <select name="cat" id="catSelect" required>
+              <option value="" disabled selected>Vänligen välj en katt</option>
+              <!-- disabled selected = unable to choose! -->
+              <option value="Cornish rex">Cornish rex</option>
+              <option value="Don sphynx">Don sphynx</option>
+              <option value="Manx">Manx</option>
+              <option value="Norwegian Forest cat">Norwegian Forest cat</option>
+            </select>
+          </div>
+          <div class="agreement memberCon">
+            <p>
+              Genom att bli medlem godkänner jag att mina personuppgifter lagras
+              och hanteras i enlighet med GDPR.
+            </p>
+            <div class="yesBox">
+              <input
+                type="checkbox"
+                id="agreement"
+                name="agreement"
+                value="ja"
+                required
+              />
+              <label class="yes" for="agreement">Ja</label>
+            </div>
+          </div>
+
+          <div class="send memberCon">
+            <button type="submit">Skicka</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
